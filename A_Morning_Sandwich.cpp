@@ -1,22 +1,28 @@
-//09:48:16 2023-07-19 
+//09:45:08 2023-07-28 
 //〄 S░A░N░D░E░E░P 〄
 #include<bits/stdc++.h>
 using namespace std;
 #define f( a, b) for (ll i = (a); i < (b); i++)
-#define v(a)  vector<a>v
 #define ll long long
-signed main() {
+int main() {
 int Nx;
 cin>>Nx;
-	 while(Nx--){
+     while(Nx--){
 //******************************************************************************
-	int n;
-	cin >> n;
-		cout << ((n + 1) * n) + n + 2 << '\n';
+ int a,b,c;
+ cin>>a>>b>>c;
+ if (a>(b+c)){
+     cout<<(b+c)*2+1<<endl;
+    
+ } 
+ else{
+     cout<<a*2-1<<endl;
+ }  
+    
    
   
  
 //******************************************************************************
-	 }
+     }
 return 0;
 }

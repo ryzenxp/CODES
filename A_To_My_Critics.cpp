@@ -1,22 +1,27 @@
-//09:48:16 2023-07-19 
+//20:15:32 2023-07-21 
 //〄 S░A░N░D░E░E░P 〄
 #include<bits/stdc++.h>
 using namespace std;
 #define f( a, b) for (ll i = (a); i < (b); i++)
-#define v(a)  vector<a>v
 #define ll long long
-signed main() {
+int main() {
 int Nx;
 cin>>Nx;
-	 while(Nx--){
+     while(Nx--){
 //******************************************************************************
-	int n;
-	cin >> n;
-		cout << ((n + 1) * n) + n + 2 << '\n';
-   
+    
+    
+   int x,y,z;
+   cin>>x>>y>>z;
+   if((x+y)>=10 || (y+z)>=10||(x+z)>=10){
+    cout<<"YES"<<endl;
+   }
+   else{
+    cout<<"NO"<<endl;
+   }
   
  
 //******************************************************************************
-	 }
+     }
 return 0;
 }
