@@ -9,22 +9,27 @@ int Nx;
 cin>>Nx;
      while(Nx--){
 //******************************************************************************
-    ll a,b,n=INT_MAX;
-    ll n1=0,n2=1,n3,i; 
-    cin>>a>>b;
-    ll sum=0,c=0;
-    
-           for(i=2;i<n;++i) //loop starts from 2 because 0 and 1 are already printed    
- {    
-  n3=n1+n2;    
-    if(n3==a&& (i>=b)){
-        cout<<i<<endl;
-        break;
-    }
-  n1=n2;    
-  n2=n3;    
- }    
+   int n,k,i,x,y,j,ans=0,temp;
+    cin >> n >> k;
+    if(k>30) cout <<0 <<endl;
+    else
+    {
+        for(i=1; i<=n; i++) {
+            x=i;
+            y=n-x;
+            for(j=1; j<k-1; j++) {
+                if(y<=x && y>=0) {
+                    temp=x;
+                    x=y;
+                    y=temp-y;
+                }
+                else break;
+                if(j==k-2) ans++;
+            }
+        }
+        cout << ans << endl;
  
+    }
     
 
     
